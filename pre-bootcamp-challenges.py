@@ -49,7 +49,6 @@ print(test_num3(x,y))
 
 #Task 5 (Using heron's formula)
 
-#per = perimeter
 #s = semi perimeter
 
 def area_of_triangle(x,y,z):
@@ -59,7 +58,7 @@ def area_of_triangle(x,y,z):
     print(area)
  
     
-area_of_triangle(6,7,8)  
+area_of_triangle(x,y,z)  
 
 
 
@@ -79,41 +78,38 @@ def maximum(x,y,z):
     return largest 
     
     
-x = 10
-y = 14
-z = 12
 print(maximum(x, y, z))   
 
 
 #TASK 7
 
 #Convert celcius to  Fahrenheit
-# c = celcius
-# F = Fahrenheit
 
-def convert_temperature(celcius):
+
+def convert_celcius_to_fahrenheit(celcius):
     Fahrenheit = (celcius * 9/5) + 32
     print(Fahrenheit)
     
-convert_temperature(30)   
+convert_celcius_to_fahrenheit(celcius)   
 
 # Convert Fahrenheit to Celcius
 
-def convert_temperature(Fahrenheit):
+def convert_fahrenheit_to_celcius(Fahrenheit):
     Celcius = (Fahrenheit -32) * 5/9
     print(Celcius)
     
-convert_temperature(30)
+convert_fahrenheit_to_celcius(Fahrenheit)
 
 
 #Task 8
 
-def Convert_number(x):
+def Convert_any_number_to_hours_and_min(x):
     hours = x * 1 / 60
-    minutes = x % (60)  
+    minutes = x % (60)
+    return ("hours", "minutes ")
     print(hours,minutes)
 
-Convert_number(150)
+Convert_any_number_to_hours_and_min(x)
 
 
 #TASK 9
