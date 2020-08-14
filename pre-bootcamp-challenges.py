@@ -40,7 +40,7 @@ print(test_num65(x,y))
 #TASK 4
 
 def test_num3(x,y):
-    if x == 3 or y == 3 or (x + y) == (x + 3) or (x + y) == (y + 3):
+    if x == 3 or y == 3 and (x + y) == (x + 3) and (x + y) == (y + 3):
         return True
     else:
         return False
@@ -106,7 +106,6 @@ convert_fahrenheit_to_celcius(Fahrenheit)
 def Convert_any_number_to_hours_and_min(x):
     hours = x * 1 / 60
     minutes = x % (60)
-    return ("hours", "minutes ")
     print(hours,minutes)
 
 Convert_any_number_to_hours_and_min(x)
@@ -146,8 +145,8 @@ def common(str1,str2):
     commonDict = dict1 & dict2 
   
     if len(commonDict) == 0: 
-        print -1
-        return
+        return -1
+        
   
     # get a list of common elements 
     commonChars = list(commonDict.elements()) 
