@@ -35,7 +35,7 @@ def test_num65(x,y):
     else:
         return False
 
-print(test_num65(x,y))
+print(test_num65(15,50))
 
 #TASK 4
 
@@ -45,7 +45,7 @@ def test_num3(x,y):
     else:
         return False
 
-print(test_num3(x,y))
+print(test_num3(2,3))
 
 #Task 5 (Using heron's formula)
 
@@ -58,7 +58,7 @@ def area_of_triangle(x,y,z):
     print(area)
  
     
-area_of_triangle(x,y,z)  
+area_of_triangle(2,4,6)  
 
 
 
@@ -78,7 +78,7 @@ def maximum(x,y,z):
     return largest 
     
     
-print(maximum(x, y, z))   
+print(maximum(12, 7, 8))   
 
 
 #TASK 7
@@ -103,12 +103,12 @@ convert_fahrenheit_to_celcius(Fahrenheit)
 
 #Task 8
 
-def Convert_any_number_to_hours_and_min(x):
+def convert_any_number_to_hours_and_min(x):
     hours = x * 1 / 60
     minutes = x % (60)
     print(hours,minutes)
 
-Convert_any_number_to_hours_and_min(x)
+convert_any_number_to_hours_and_min(150)
 
 
 #TASK 9
