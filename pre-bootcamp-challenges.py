@@ -84,21 +84,23 @@ print(maximum(12, 7, 8))
 #TASK 7
 
 #Convert celcius to  Fahrenheit
-
-
-def convert_celcius_to_fahrenheit(celcius):
-    Fahrenheit = (celcius * 9/5) + 32
-    print(Fahrenheit)
+def convert_celcius(celcius):
+    fahrenheit = (celcius * 9/5) + 32
+    return fahrenheit
     
-convert_celcius_to_fahrenheit(celcius)   
+temperature_in_celcius = float(input("Enter a celcius: "))
+print("The temperature in fahrenheit is {:.2f}".format(convert_celcius(temperature_in_celcius))) 
+
+   
 
 # Convert Fahrenheit to Celcius
 
-def convert_fahrenheit_to_celcius(Fahrenheit):
-    Celcius = (Fahrenheit -32) * 5/9
-    print(Celcius)
-    
-convert_fahrenheit_to_celcius(Fahrenheit)
+def convert_fahrenheit(fahrenheit):
+    celcius = (fahrenheit -32) * 5/9
+    return celcius
+
+temperature_in_fahrenheit = float(input("Enter fahrenheit: "))
+print("The temperature in celcius is {:.2f}".format(convert_fahrenheit(temperature_in_fahrenheit)))     
 
 
 #Task 8
