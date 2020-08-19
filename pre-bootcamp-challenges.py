@@ -34,18 +34,25 @@ def test_num65(x,y):
         return True
     else:
         return False
-
-print(test_num65(15,50))
+    
+num1 = float(input('Enter first number  :'))
+num2 = float(input('Enter second number :'))
+   
+print(test_num65(num1,num2))
 
 #TASK 4
 
 def test_num3(x,y):
-    if x == 3 or y == 3 and (x + y) == (x + 3) and (x + y) == (y + 3):
+    if x == 3 or y == 3 and x % y :
         return True
     else:
         return False
 
-print(test_num3(2,3))
+num1 = float(input('Enter first number  :'))
+num2 = float(input('Enter second number :'))
+
+print(test_num3(num1,num2))
+
 
 #Task 5 (Using heron's formula)
 
@@ -134,7 +141,6 @@ Check_Vow(string, vowels)
 
 #TASK 11
 # Function to print common characters of two Strings 
-
 from collections import Counter 
   
 def common(str1,str2): 
@@ -147,16 +153,18 @@ def common(str1,str2):
     commonDict = dict1 & dict2 
   
     if len(commonDict) == 0: 
-        return -1
-        
+        print -1
+        return
   
     # get a list of common elements 
     commonChars = list(commonDict.elements()) 
   
-   
-
+    # join characters without space to produce  
+    # resultant string 
+    print ''.join(commonChars) 
   
 if __name__ == "__main__": 
     str1 = 'house'
     str2 = 'computers'
-    common(str1, str2)
+    common(str1, str2) 
+
