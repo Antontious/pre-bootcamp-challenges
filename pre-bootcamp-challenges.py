@@ -113,12 +113,12 @@ print("The temperature in celcius is {:.2f}".format(convert_fahrenheit(temperatu
 #Task 8
 
 def convert_any_number_to_hours_and_min(x):
-    hours = str(x  // 60) + "hours" 
-    minutes = str (x % (60)) + "minutes" 
-    return hours, minutes
+    hours = str(x  // 60)  
+    minutes = str(x % (60))  
+    return hours +  "hours"  , minutes +  "minutes"
 
 time =int(input("Enter any number :")) 
-print ("Time is", convert_any_number_to_hours_and_min(time))
+print (convert_any_number_to_hours_and_min(time))
 
 
 #TASK 9
