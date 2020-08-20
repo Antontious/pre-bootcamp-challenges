@@ -43,7 +43,7 @@ print(test_num65(num1,num2))
 #TASK 4
 
 def test_num3(x,y):
-    if x == 3 or y == 3 and x % y :
+    if x == 3 or y == 3 and x % y ==0:
         return True
     else:
         return False
@@ -113,11 +113,12 @@ print("The temperature in celcius is {:.2f}".format(convert_fahrenheit(temperatu
 #Task 8
 
 def convert_any_number_to_hours_and_min(x):
-    hours = x * 1 / 60
-    minutes = x % (60)
-    print(hours,minutes)
+    hours = str(x  // 60) + "hours" 
+    minutes = str (x % (60)) + "minutes" 
+    return hours, minutes
 
-convert_any_number_to_hours_and_min(150)
+time =int(input("Enter any number :")) 
+print ("Time is", convert_any_number_to_hours_and_min(time))
 
 
 #TASK 9
