@@ -46,7 +46,7 @@ def test_num3(x,y):
     
     if x == 3 or y == 3:
       
-    elif (x+y) == (i == 3 or isDigitPresent(i)):
+    elif (x+y) == isDigitPresent(3):
     
         return True
     else:
@@ -122,7 +122,7 @@ def convert_any_number_to_hours_and_min(x):
     return hours +  "hours"  , minutes +  "minutes"
 
 time =int(input("Enter any number :")) 
-print (convert_any_number_to_hours_and_min(time))
+print(convert_any_number_to_hours_and_min(time))
 
 
 #TASK 9
