@@ -44,10 +44,7 @@ print(test_num65(num1,num2))
 
 def test_num3(x,y):
     
-    if x == 3 or y == 3:
-        return True
-      
-    elif (x+y) == isDigitPresent(3):  
+    if x == 3 or y == 3 and (x+y) == isDigitPresent(3) :
         return True
     
     else:
